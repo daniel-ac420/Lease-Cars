@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lease Cars</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<!--
+	<link href="css/normalize.css" rel="stylesheet">
+	-->
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="wrapper-height">
+	
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__inner">
+					<a class="logo" href="index.html">
+						<img class="logo__img" src="images/logo/logo.svg" alt="Logo">
+					</a>
+					<nav class="menu">
+						<button class="mobile__menu__bttn" title="Mobile Menu"></button>
+						<ul class="menu__list">
+							<li class="menu__list-item menu__list-item--active" title="New Cars">
+								<a class="menu__list-link" href="">
+									new cars
+								</a>
+							</li>
+							<li class="menu__list-item" title="Pre-owned Cars">
+								<a class="menu__list-link" href="#">
+									pre-owned cars
+								</a>
+							</li>
+							<li class="menu__list-item" title="Finance">
+								<a class="menu__list-link" href="#">
+									finance
+								</a>
+							</li>
+							<li class="menu__list-item" title="Lease vs Buy">
+								<a class="menu__list-link" href="#">
+									lease vs buy
+								</a>
+							</li>
+							<li class="menu__list-item" title="Contact Us">
+								<a class="menu__list-link" href="contacts.html">
+									contact us
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		
+		<main class="main">
+			<section class="catalog">
+				<div class="wrapper">
+					<h2 class="title section__title catalog__title" title="Choose Your Car">
+						Choose Your Car
+					</h2>
+					
+					<div class="tabs">
+						<div class="tabs__bttn">
+							<button class="tabs__bttn-item tabs__bttn-item--active title item-title" data-button="content-1" title="Car and Minivan">
+								Car and Minivan
+							</button>
+							<button class="tabs__bttn-item title item-title" data-button="content-2" title="Trucks">
+								Trucks
+							</button>
+							<button class="tabs__bttn-item title item-title" data-button="content-3" title="Crossovers & SUVs">
+								Crossovers & SUVs
+							</button>
+							<button class="tabs__bttn-item title item-title" data-button="content-4" title="Electrified">
+								Electrified
+							</button>
+						</div>
+						
+						<div class="tabs__content">
+							<div class="tabs__content-item tabs__content-item--active" id="content-1">
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Toyota Crown 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-001-Toyota-Crown-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Toyota Crown 2023">
+											Toyota Crown 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 39900
+										</div>
+										<div class="catalog__item-leaseprice">
+											$ 650/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content-item" id="content-2">
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Chevrolet Silverado">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-008-Chevrolet-Silverado.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Chevrolet Silverado
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 62260
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $1,032/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Jeep Wrangler 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-012-Jeep-Wrangler-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Jeep Wrangler 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 60000
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $997/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content-item" id="content-3">
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Ford Explorer 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-005-Ford-Explorer-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Ford Explorer 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 49900
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $1,013/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Santa  Fe 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-006-Santa--Fe-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Santa  Fe 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 39900
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $739/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="KIA Niro 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-007-KIA-Niro-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											KIA Niro 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 33600
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $554/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Honda CR-V 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-009-Honda-CR-V-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Honda CR-V 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 35650
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $591/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Hyundai Tucson">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-010-Hyundai-Tucson.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Hyundai Tucson
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 31885
+										</div>
+										<div class="catalog__item-leaseprice">
+											$528/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Chevrolet Equinox">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-011-Chevrolet-Equinox-.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Chevrolet Equinox
+										</div>
+										<div class="catalog__item-fullprice">
+											sstarting from $ 28430
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $471/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content-item" id="content-4">
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Prius Prime 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-002-Prius-Prime-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Prius Prime 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 39900
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $ 450/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Toyota Prius 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-003-Toyota-Prius-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Toyota Prius 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 39900
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $ 400/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+								
+								<div class="catalog__item">
+									<a class="catalog__item-link--image" href="#" title="Hyundai Kona 2023">
+										<img class="catalog__item-image" src="images/catalog/catalog-image-004-Hyundai-Kona-2023.png" alt="">
+									</a>
+									<div class="catalog__item-wrapper">
+										<div class="catalog__item-title" title="Prius Prime 2023">
+											Hyundai Kona 2023
+										</div>
+										<div class="catalog__item-fullprice">
+											starting from $ 39900
+										</div>
+										<div class="catalog__item-leaseprice">
+											 $ 510/mo
+										</div>
+										<a class="catalog__item-link" href="#" title="See Details About Car">
+											see details
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a class="bttn showmore-bttn" href="#" title="Show More">
+						Show More
+					</a>
+				</div>
+			</section>
+			
+			<section class="articles">
+				<div class="wrapper">
+					<div class="articles__inner">
+						<div class="articles__item">
+							<a class="articles__item-link" href="#" title="An easier way to buy your next Toyota">
+								<img class="articles__item-image" src="images/articles/articles-image-01.png" alt="">
+							</a>
+							<div class="articles__item-wrapper">
+								<div class="title item-title articles__item-title" title="An easier way to buy your next Toyota">
+									An easier way to buy your next Toyota
+								</div>
+								<a class="bttn articles__item-bttn" href="#" title="more">
+									more
+								</a>
+							</div>
+						</div>
+						<div class="articles__item">
+							<a class="articles__item-link" href="#" title="A Guide to Road-Tripping With Pets">
+								<img class="articles__item-image" src="images/articles/articles-image-02.png" alt="">
+							</a>
+							<div class="articles__item-wrapper">
+								<div class="title item-title articles__item-title" title="A Guide to Road-Tripping With Pets">
+									A Guide to Road-Tripping With Pets
+								</div>
+								<a class="bttn articles__item-bttn" href="#" title="more">
+									more
+								</a>
+							</div>
+						</div>
+					</div>
+					<a class="bttn showmore-bttn" href="#" title="Show More">
+						Show More
+					</a>
+				</div>
+			</section>
+		</main>
+	
+		
+		<footer class="footer">
+			<div class="wrapper">
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__list-item" title="Products">
+							<p class="footer__list-title">
+								Products
+							</p>
+						</li>
+						<li class="footer__list-item" title="Used">
+							<a class="footer__list-link" href="#">
+								Used
+							</a>
+						</li>
+						<li class="footer__list-item" title="New">
+							<a class="footer__list-link" href="#">
+								New
+							</a>
+						</li>
+						<li class="footer__list-item" title="Sell your car">
+							<a class="footer__list-link" href="#">
+								Sell your car
+							</a>
+						</li>
+					</ul>
+					
+					<ul class="footer__menu-list">
+						<li class="footer__list-item" title="Resources">
+							<p class="footer__list-title">
+								Resources
+							</p>
+						</li>
+						<li class="footer__list-item" title="Blog">
+							<a class="footer__list-link" href="#">
+								Blog
+							</a>
+						</li>
+						<li class="footer__list-item" title="FAQ">
+							<a class="footer__list-link" href="#">
+								FAQ
+							</a>
+						</li>
+						<li class="footer__list-item" title="Contact us">
+							<a class="footer__list-link" href="#">
+								Contact us
+							</a>
+						</li>
+					</ul>
+					
+					<ul class="footer__menu-list">
+						<li class="footer__list-item" title="Work With TrueCar">
+							<p class="footer__list-title">
+								Work With TrueCar
+							</p>
+						</li>
+						<li class="footer__list-item" title="Dealers">
+							<a class="footer__list-link" href="#">
+								Dealers
+							</a>
+						</li>
+						<li class="footer__list-item" title="Partners">
+							<a class="footer__list-link" href="#">
+								Partners
+							</a>
+						</li>
+					</ul>
+					
+					<ul class="footer__menu-list">
+						<li class="footer__list-item" title="About">
+							<p class="footer__list-title">
+								About
+							</p>
+						</li>
+						<li class="footer__list-item" title="About us">
+							<a class="footer__list-link" href="#">
+								About us
+							</a>
+						</li>
+						<li class="footer__list-item" title="Team">
+							<a class="footer__list-link" href="#">
+								Team
+							</a>
+						</li>
+						<li class="footer__list-item" title="Careers">
+							<a class="footer__list-link" href="#">
+								Careers
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="application__links">
+					<a class="application__links-item" href="#" title="Download in App Store">
+						<img class="application__links-image" src="images/footer/footer-app-link-1-app-store.svg" alt="">
+					</a>
+					<a class="application__links-item" href="#" title="Download in Google Play">
+						<img class="application__links-image" src="images/footer/footer-app-link-2-google-play.svg" alt="">
+					</a>
+				</div>
+				<div class="agreements">
+					<p class="agreements-text">
+						For questions about the TrueCar Auto Buying Service please call <a class="agreements-phone" href="telto:18888783227" title="Call to 18888783227">1-888-878-3227</a>.
+					</p>
+					<p class="agreements-text">
+						Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer Certification Program.
+					</p>
+					<p class="agreements-text">
+						TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.
+					</p>
+				</div>
+				<nav class="copyright__menu">
+					<ul class="copyright__menu-list">
+						<li class="copyright__menu-item" title="Terms of Service">
+							<a class="copyright__menu-link" href="#">
+								Terms of Service
+							</a>
+						</li>
+						<li class="copyright__menu-item" title="Privacy Policy">
+							<a class="copyright__menu-link" href="#">
+								Privacy Policy
+							</a>
+						</li>
+						<li class="copyright__menu-item" title="Do Not Sell My Personal Information">
+							<a class="copyright__menu-link" href="#">
+								Do Not Sell My Personal Information
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!-- ↓↓↓ SCRIPTS ↓↓↓ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
